@@ -1,6 +1,8 @@
 # Usage of Fibonacci heap
 Test out the code live on [repl.it](https://repl.it/Bouq/13)
 
+> Using Fibonacci heaps for priority queues improves the asymptotic running time of important algorithms, such as Dijkstra's algorithm for computing the shortest path between two nodes in a graph, compared to the same algorithm using other slower priority queue data structures.
+
 <img src="http://i.imgur.com/069fuCV.png" width="600">
 
 # Heap functions
