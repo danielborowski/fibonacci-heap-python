@@ -1,6 +1,3 @@
-##########################
-#  FIBONACCI HEAP CLASS
-##########################
 class FibonacciHeap:
     
     # internal node class 
