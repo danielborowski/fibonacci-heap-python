@@ -53,6 +53,4 @@ I decided to test out my implementation of the Fibonacci heap vs. the [heapq](ht
 The Fibonacci heap did in fact run more slowly when trying to extract all the minimum nodes. You can see the comparison run times on [repl.it](https://repl.it/BouR/8) for yourself.
 
 # Note
-[Michael Fredman](https://en.wikipedia.org/wiki/Michael_Fredman), one of the creators of the Fibonacci heap, was one of my professors in college. 
-
-The class was very difficult.
+[Michael Fredman](https://en.wikipedia.org/wiki/Michael_Fredman), one of the creators of the Fibonacci heap, was one of my professors in college. The class was very difficult.
