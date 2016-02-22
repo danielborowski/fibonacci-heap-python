@@ -42,5 +42,8 @@ print [x.data for x in f3.iterate(f3.root_list)]
 
 q = f3.extract_min()
 print q.data # 1
-
 ```
+
+# Results
+Quote from the [original](http://www.cs.cmu.edu/~sleator/papers/pairing-heaps.pdf) paper:
+> They are complicated when it comes to coding them. Also they are not as efficient in practice when compared with the theoretically less efficient forms of heaps, since in their simplest version they require storage and manipulation of four pointers per node, compared to the two or three pointers per node needed for other structures
