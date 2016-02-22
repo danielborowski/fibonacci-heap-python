@@ -54,4 +54,5 @@ The Fibonacci heap did in fact run more slowly when trying to extract all the mi
 
 # Note
 [Michael Fredman](https://en.wikipedia.org/wiki/Michael_Fredman), one of the creators of the Fibonacci heap, was one of my professors in college. 
-The class was very hard.
+
+The class was very difficult.
