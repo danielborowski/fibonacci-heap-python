@@ -55,7 +55,7 @@ Quote from the [original](http://www.cs.cmu.edu/~sleator/papers/pairing-heaps.pd
 
 I decided to test out my implementation of the Fibonacci heap vs. the [heapq](https://docs.python.org/2/library/heapq.html) algorithm module in Python which implements a basic binary heap using array indexing for the nodes.
 
-The Fibonacci heap did in fact run more slowly when trying to extract all the minimum nodes. You can see the comparison run times on [repl.it](https://repl.it/BouR/9) for yourself.
+The Fibonacci heap did in fact run more slowly when trying to extract all the minimum nodes. You can see the comparison run times on [repl.it](https://repl.it/BouR/10) for yourself.
 
 ## Running times
 Initilaze both heaps with some data:
@@ -81,6 +81,24 @@ start_time = time.time()
 while h:
     m = heappop(h)
 print "%s seconds run time for heapq" % (time.time() - start_time)
+````
+
+## n = 100
+````
+0.0233929157257 seconds run time for fib heap
+0.000274181365967 seconds run time for heapq
+````
+
+## n = 500
+````
+0.171870946884 seconds run time for fib heap
+0.00176405906677 seconds run time for heapq
+````
+
+## n = 1000
+````
+0.372798919678 seconds run time for fib heap
+0.00374603271484 seconds run time for heapq
 ````
 
 # Note
