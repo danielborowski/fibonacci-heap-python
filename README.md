@@ -1,5 +1,5 @@
 # Usage of Fibonacci heap
-Test out the code live on [repl](https://repl.it/Bouq/13)
+Test out the code live on [repl.it](https://repl.it/Bouq/13)
 
 # Heap functions
 - find_min() runs in O(1) time
@@ -48,8 +48,9 @@ print q.data # 1
 Quote from the [original](http://www.cs.cmu.edu/~sleator/papers/pairing-heaps.pdf) paper:
 > They are complicated when it comes to coding them. Also they are not as efficient in practice when compared with the theoretically less efficient forms of heaps, since in their simplest version they require storage and manipulation of four pointers per node, compared to the two or three pointers per node needed for other structures
 
-> Although the total running time of a sequence of operations starting with an empty structure is bounded by the bounds given above, some (very few) operations in the sequence can take very long to complete (in particular delete and delete minimum have linear running time in the worst case). 
-
 I decided to test out my implementation of the Fibonacci heap vs. the [heapq](https://docs.python.org/2/library/heapq.html) algorithm module in Python which implements a basic binary heap using array indexing for the nodes.
 
 The Fibonacci heap did in fact run more slowly when trying to extract all the minimum nodes. You can see the comparison run times on [repl.it](https://repl.it/BouR/8) for yourself.
+
+# Note
+Michael Fredman, one of the creators of the Fibonacci heap, was one of my professors in college. The class was very hard.
