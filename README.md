@@ -12,7 +12,7 @@ Test out the code live on [repl.it](https://repl.it/Bouq/13)
 - `merge(h)` runs in O(1) time
 - `decrease_key(x, k)` runs in O(1) time
 
-More info on the amortized analysis and running times can be found [here](http://bit.ly/1ow1Clm).
+More info on the amortized analysis and running times can be found [here](http://bit.ly/1ow1Clm) or on [Wikipedia](https://en.wikipedia.org/wiki/Fibonacci_heap#Summary_of_running_times).
 
 # Example
 
