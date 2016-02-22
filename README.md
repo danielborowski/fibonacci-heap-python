@@ -57,5 +57,31 @@ I decided to test out my implementation of the Fibonacci heap vs. the [heapq](ht
 
 The Fibonacci heap did in fact run more slowly when trying to extract all the minimum nodes. You can see the comparison run times on [repl.it](https://repl.it/BouR/9) for yourself.
 
+## Running times
+Initilaze both heaps with some data:
+````python
+f = FibonacciHeap()
+h = []
+n = 100
+for i in xrange(0, n):
+    f.insert(randint(1,1000))
+    heappush(h, randint(1,1000))
+````
+
+The code to extract the min from both heaps and print the running time:
+````python
+# test fib heap running time 
+start_time = time.time()
+while f.total_nodes > 0:
+    m = f.extract_min()
+print "%s seconds run time for fib heap" % (time.time() - start_time)
+
+# test heapq running time 
+start_time = time.time()
+while h:
+    m = heappop(h)
+print "%s seconds run time for heapq" % (time.time() - start_time)
+````
+
 # Note
 [Michael Fredman](https://en.wikipedia.org/wiki/Michael_Fredman), one of the creators of the Fibonacci heap, was one of my professors in college. His class was very difficult.
