@@ -3,12 +3,14 @@ Test out the code live on [repl](https://repl.it/Bouq/13)
 
 # Heap functions
 - find_min() runs in O(1) time
-- extract_min() runs in O(1) time
+- extract_min() runs in O(log n) time
 - insert(k) runs in O(1) time
 - merge(h) runs in O(1) time
-- decrease_key(x, k) runs in O(log n) time
+- decrease_key(x, k) runs in O(1) time
 
 More info on the amortized analysis and running times can be found [here](http://bit.ly/1ow1Clm).
+
+# Example
 
 ```python
 f = FibonacciHeap()
@@ -32,6 +34,10 @@ f2.insert(100)
 f2.insert(56)
 
 f3 = f.merge(f2)
-f3.decrease_key(q, 4)
+x = f3.root_list.right # pointer to random node
+
+f3.decrease_key(x, 1)
+q = f3.extract_min()
+print q.data # 1
 
 ```
