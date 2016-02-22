@@ -1,4 +1,5 @@
 # Usage of Fibonacci heap
+Test out the code live on [repl](https://repl.it/Bouq/13)
 
 ```python
 f = FibonacciHeap()
