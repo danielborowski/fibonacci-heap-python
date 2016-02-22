@@ -60,6 +60,9 @@ The Fibonacci heap did in fact run more slowly when trying to extract all the mi
 ## Running times
 Initilaze both heaps with some data:
 ````python
+from heapq import *
+from random import randint
+
 f = FibonacciHeap()
 h = []
 n = 100
@@ -70,6 +73,8 @@ for i in xrange(0, n):
 
 The code to extract the min from both heaps and print the running time:
 ````python
+import time
+
 # test fib heap running time 
 start_time = time.time()
 while f.total_nodes > 0:
