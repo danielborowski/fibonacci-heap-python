@@ -35,8 +35,11 @@ f2.insert(56)
 
 f3 = f.merge(f2)
 x = f3.root_list.right # pointer to random node
-
 f3.decrease_key(x, 1)
+
+# print the root list using the iterate class method
+print [x.data for x in f3.iterate(f3.root_list)]
+
 q = f3.extract_min()
 print q.data # 1
 
