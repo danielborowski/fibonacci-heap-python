@@ -1,4 +1,4 @@
-<img src="http://i.imgur.com/069fuCV.png" width="400">
+<img src="http://i.imgur.com/069fuCV.png" width="500">
 
 # Usage of Fibonacci heap
 Test out the code live on [repl.it](https://repl.it/Bouq/13)
