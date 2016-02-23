@@ -103,8 +103,8 @@ print "%s seconds run time for heapq" % (time.time() - start_time)
 
 ### n = 1000
 ````
-0.200292825699 seconds run time for fib heap
-0.00409603118896 seconds run time for heapq
+0.19855594635 seconds run time for fib heap
+0.00374603271484 seconds run time for heapq
 ````
 
 # Note
