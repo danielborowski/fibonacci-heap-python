@@ -55,7 +55,7 @@ Quote from the [original](http://www.cs.cmu.edu/~sleator/papers/pairing-heaps.pd
 
 I decided to test out my implementation of the Fibonacci heap vs. the [heapq](https://docs.python.org/2/library/heapq.html) algorithm module in Python which implements a basic binary heap using array indexing for the nodes.
 
-The Fibonacci heap did in fact run more slowly when trying to extract all the minimum nodes. You can see the comparison run times on [repl.it](https://repl.it/BouR/10) for yourself. 
+The Fibonacci heap did in fact run more slowly when trying to extract all the minimum nodes. You can see the comparison run times on [repl.it](https://repl.it/BouR/13) for yourself. 
 
 ## Running times
 Initilaze both heaps with some data:
@@ -67,8 +67,9 @@ f = FibonacciHeap()
 h = []
 n = 100
 for i in xrange(0, n):
-    f.insert(randint(1,1000))
-    heappush(h, randint(1,1000))
+    r = randint(1, 1000)
+    f.insert(r)
+    heappush(h, r)
 ````
 
 The code to extract the min from both heaps and print the running time:
@@ -90,20 +91,20 @@ print "%s seconds run time for heapq" % (time.time() - start_time)
 
 ### n = 100
 ````
-0.0233929157257 seconds run time for fib heap
-0.000274181365967 seconds run time for heapq
+0.0109820365906 seconds run time for fib heap
+0.000254154205322 seconds run time for heapq
 ````
 
 ### n = 500
 ````
-0.171870946884 seconds run time for fib heap
-0.00176405906677 seconds run time for heapq
+0.0828540325165 seconds run time for fib heap
+0.00195384025574 seconds run time for heapq
 ````
 
 ### n = 1000
 ````
-0.372798919678 seconds run time for fib heap
-0.00374603271484 seconds run time for heapq
+0.200292825699 seconds run time for fib heap
+0.00409603118896 seconds run time for heapq
 ````
 
 # Note
