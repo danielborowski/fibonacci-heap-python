@@ -53,9 +53,11 @@ print q.data # 1
 Quote from the [original](http://www.cs.cmu.edu/~sleator/papers/pairing-heaps.pdf) paper:
 > They are complicated when it comes to coding them. Also they are not as efficient in practice when compared with the theoretically less efficient forms of heaps, since in their simplest version they require storage and manipulation of four pointers per node, compared to the two or three pointers per node needed for other structures
 
-I decided to test out my implementation of the Fibonacci heap vs. the [heapq](https://docs.python.org/2/library/heapq.html) algorithm module in Python which implements a basic binary heap using array indexing for the nodes.
+I decided to test out my implementation of the Fibonacci heap vs. the [heapq](https://docs.python.org/2/library/heapq.html) algorithm module in Python which implements a basic binary heap using array indexing for the nodes. 
 
 The Fibonacci heap did in fact run more slowly when trying to extract all the minimum nodes. You can see the comparison run times on [repl.it](https://repl.it/BouR/13) for yourself. 
+
+Note: I performed some basic inserts and extracted the minimum several times to see which data structure was more efficent, which isn't the best test for analyzing the running time. For a more thorough analysis on applying the Fibonacci heap to the shortest path algorithm, check out this [answer on Stack Overflow](https://stackoverflow.com/questions/504823/has-anyone-actually-implemented-a-fibonacci-heap-efficiently/508221#508221).
 
 ## Running times
 Initilaze both heaps with some data:
