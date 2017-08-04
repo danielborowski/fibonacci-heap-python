@@ -57,7 +57,7 @@ I decided to test out my implementation of the Fibonacci heap vs. the [heapq](ht
 
 The Fibonacci heap did in fact run more slowly when trying to extract all the minimum nodes. You can see the comparison run times on [repl.it](https://repl.it/BouR/13) for yourself. 
 
-Note: I performed some basic inserts and extracted the minimum several times to see which data structure was more efficent, which isn't the best test for analyzing the running time. For a more thorough analysis on applying the Fibonacci heap to the shortest path algorithm, check out this [answer on Stack Overflow](https://stackoverflow.com/questions/504823/has-anyone-actually-implemented-a-fibonacci-heap-efficiently/508221#508221).
+Note: I performed some basic inserts and extracted the minimum several times to see which data structure was more efficient, which isn't the best test for analyzing the running time. For a more thorough analysis on applying the Fibonacci heap to the shortest path algorithm, check out this [answer on Stack Overflow](https://stackoverflow.com/questions/504823/has-anyone-actually-implemented-a-fibonacci-heap-efficiently/508221#508221).
 
 ## Running times
 Initilaze both heaps with some data:
