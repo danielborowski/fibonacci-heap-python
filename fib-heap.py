@@ -1,3 +1,5 @@
+import math
+
 
 class FibonacciHeap:
 
@@ -117,7 +119,7 @@ class FibonacciHeap:
     # combine root nodes of equal degree to consolidate the heap
     # by creating a list of unordered binomial trees
     def consolidate(self):
-        A = [None] * self.total_nodes
+        A = [None] * int(math.log(self.total_nodes) * 2)
         nodes = [w for w in self.iterate(self.root_list)]
         for w in range(0, len(nodes)):
             x = nodes[w]
