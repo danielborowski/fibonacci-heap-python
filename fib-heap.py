@@ -138,7 +138,7 @@ class FibonacciHeap:
         # nodes around in the above loop
         for i in range(0, len(A)):
             if A[i] is not None:
-                if A[i].key < self.min_node.key:
+                if A[i].key <= self.min_node.key:
                     self.min_node = A[i]
 
     # actual linking of one node to another in the root list
